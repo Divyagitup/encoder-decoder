@@ -44,14 +44,37 @@ A0 = Y7 + Y5 + Y3 + Y1 <br>
 
 
 ## Program:
+module exp8a(a,b,c,d0,d1,d2,d3,d4,d5,d6,d7);
+input a,b,c;
+output d0,d1,d2,d3,d4,d5,d6,d7;
+assign d0=((~a)&(~b)&(~c));
+assign d1=((~a)&(~b)&c);
+assign d2=((~a)&b&(~c));
+assign d3=((~a)&b&c);
+assign d4=(a&(~b)&(~c));
+assign d5=(a&(~b)&c);
+assign d6=(a&b&(~c));
+assign d7=(a&b&c);
+endmodule
 
+module exp8b(y7,y6,y5,y4,y3,y2,y1,a2,a1,a0);
+input y7,y6,y5,y4,y3,y2,y1;
+output a2,a1,a0;
+assign a2=(y7+y6+y5+y4);
+assign a1=(y7+y6+y3+y2);
+assign a0=(y7+y5+y3+y1);
+endmodule
 
 ## RTL Schematic:
+<img width="556" alt="exp8adia" src="https://github.com/Divyagitup/encoder-decoder/assets/134514564/a00481c6-01d9-417c-8c2c-7d9eb565d301">
+<img width="429" alt="exp8bdia" src="https://github.com/Divyagitup/encoder-decoder/assets/134514564/d488f540-3876-4f7a-8d4f-6385637dcd2e">
 
 
 
 
 ## Timing Diagram:
+<img width="705" alt="exp8aout" src="https://github.com/Divyagitup/encoder-decoder/assets/134514564/87c68fbc-55e4-4eb2-bb84-0416426d9110">
+<img width="911" alt="exp8bout" src="https://github.com/Divyagitup/encoder-decoder/assets/134514564/daf13054-d96d-49a5-b028-b425d43a6712">
 
 
 
