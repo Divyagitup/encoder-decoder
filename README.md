@@ -44,6 +44,7 @@ A0 = Y7 + Y5 + Y3 + Y1 <br>
 
 
 ## Program:
+~~~
 module exp8a(a,b,c,d0,d1,d2,d3,d4,d5,d6,d7);
 input a,b,c;
 output d0,d1,d2,d3,d4,d5,d6,d7;
@@ -56,7 +57,8 @@ assign d5=(a&(~b)&c);
 assign d6=(a&b&(~c));
 assign d7=(a&b&c);
 endmodule
-
+~~~
+~~~
 module exp8b(y7,y6,y5,y4,y3,y2,y1,a2,a1,a0);
 input y7,y6,y5,y4,y3,y2,y1;
 output a2,a1,a0;
@@ -64,6 +66,7 @@ assign a2=(y7+y6+y5+y4);
 assign a1=(y7+y6+y3+y2);
 assign a0=(y7+y5+y3+y1);
 endmodule
+~~~
 
 ## RTL Schematic:
 <img width="556" alt="exp8adia" src="https://github.com/Divyagitup/encoder-decoder/assets/134514564/a00481c6-01d9-417c-8c2c-7d9eb565d301">
